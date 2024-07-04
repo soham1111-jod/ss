@@ -18,24 +18,26 @@
    font-style: normal; */
 
 }
-body{
-    background-image: url("img/background.png");
-    background-size:cover;
-    background-repeat: no-repeat;
 
-    background-position: center; 
+body {
+    background-image: url("img/background_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 100%;
+    width: 100%;
+    /* background-position: center;  */
 }
 
-section{
+section {
     background-image: url("img/background.jpg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 750px;
-    background-position: center; 
+    height: 790px;
+    background-position: center;
     overflow: hidden;
 
-} 
+}
 
 .header {
     position: fixed;
@@ -49,7 +51,7 @@ section{
     padding: 2rem 9%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     display: flex;
-   
+
 
 }
 
@@ -111,7 +113,7 @@ section{
 }
 
 .hero {
-    
+
     margin-left: 40px;
 
     margin-top: 210px;
@@ -126,13 +128,13 @@ section{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 250px;
     /* border: 1px solid #c64b2f ;
     border-radius: 8px;
     width: 600px; */
     /* margin-left:  500px;  */
-    margin-bottom: 300px;
-
+    margin-bottom: 30px;
+    position: relative;
 
 }
 
@@ -172,6 +174,7 @@ input {
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 #but {
@@ -195,7 +198,8 @@ input {
     padding: 10px 20px;
     margin-bottom: 20px;
 }
- /* FAQ */
+
+/* FAQ */
 
 
 /* #f{
@@ -213,61 +217,71 @@ summary{
 } */
 
 
-.faq{
+.faq {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-details{
+details {
     /* padding: 1em; */
     border: 2px solid black;
     border-radius: 8px;
     transition: all 0.4s ease-in-out;
     text-align: left;
     max-height: 50px;
-    max-width: 650px; 
+    max-width: 650px;
     margin-top: 15px;
     margin-left: 450px;
 }
 
-details[open].st{
+details[open].st {
     max-height: 200px
-    
 }
 
-details summary{    
+details summary {
     padding-left: 20px;
     cursor: pointer;
 }
 
-details[open] summary::marker{
+details[open] summary::marker {
     content: '-';
     font-weight: 700;
     font-size: 25px;
 }
 
-summary::after{
+summary::marker {
     content: '+';
     font-weight: 700;
     font-size: 25px;
 }
 
-details p{
+details p {
     font-size: 16px;
     font-family: sans-serif;
-    
+
 
 }
+
 /* Don't touch */
-.hide{
+.hide {
     display: none;
+}
+
+
+.ans1 {
+    color: #fff;
+
+}
+
+.ans2 {
+    color: #fff;
 }
 
 /* search */
 
-#s_bar{
+#s_bar {
     /* position: absolute;
     top: 300px; */
     /* background-color: #eee;
@@ -287,7 +301,7 @@ details p{
     margin-right: 120px;
 }
 
-.search{
+.search {
     display: inline;
     position: absolute;
     top: 300px;
@@ -304,20 +318,20 @@ details p{
     margin-top: 15px;
 }
 
-#s_bar::placeholder{
+#s_bar::placeholder {
     color: white;
     font-weight: 500;
     font-size: 20px;
 }
 
-.s_bnt{
-    
+.s_bnt {
+
     position: absolute;
     top: -2px;
-    padding-right: 73px;
+    padding-right: 79px;
     width: 10px;
     height: 50px;
     border-radius: 8px;
     cursor: pointer;
     background-color: #98e54c;
-}
+} 
